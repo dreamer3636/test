@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             txtNum1 = new TextBox();
@@ -99,7 +100,9 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(834, 498);
             Controls.Add(btnStart);
             Controls.Add(label3);
             Controls.Add(txtRes);
@@ -108,6 +111,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
+            RightToLeft = RightToLeft.No;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
