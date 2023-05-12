@@ -35,7 +35,6 @@
             txtRes = new TextBox();
             label3 = new Label();
             btnStart = new Button();
-            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -96,21 +95,11 @@
             btnStart.UseVisualStyleBackColor = true;
             btnStart.Click += btnStart_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(168, 376);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 24);
-            label4.TabIndex = 7;
-            label4.Text = "测试";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label4);
             Controls.Add(btnStart);
             Controls.Add(label3);
             Controls.Add(txtRes);
@@ -133,6 +122,5 @@
         private TextBox txtRes;
         private Label label3;
         private Button btnStart;
-        private Label label4;
     }
 }
