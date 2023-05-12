@@ -6,5 +6,11 @@ namespace MyTest
         {
             InitializeComponent();
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            double resultNum = double.Parse(txtNum1.Text) + double.Parse(txtNum2.Text);
+            txtRes.Text = resultNum.ToString();
+        }
     }
 }
